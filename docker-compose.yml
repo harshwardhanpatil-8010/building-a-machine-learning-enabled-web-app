@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: vite-vue-app
+    ports:
+      # Map host port 3000 (from vite.config.js) to container's Nginx port 80
+      - "3000:80"
